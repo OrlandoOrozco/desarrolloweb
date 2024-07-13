@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    background-color: #3123b3; 
+}
+
+.container {
+    width: 300vw; /* Ocupa el 100% del ancho del viewport */
+    height: 300vh; /* Ocupa el 100% de la altura del viewport */
+    background-color: #a07e7e;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container header {
+    width: 100%;
+    
+}
+
+.container header .top-bar {
+    height: 100px;
+    background: #ffffff;
+    border-bottom: 1px solid;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container header .top-bar .logo img {
+    width: 140px; 
+    height: auto; 
+}
+
+.container header .top-bar .menu {
+    display: flex;
+}
+
+
+
+.container header .top-bar .menu li {
+    margin: 0 15px; /* Espacio entre los ítems del menú */
+}
+
+
+
+
+.container header .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen ocupe todo el contenedor manteniendo su proporción */
+   
+  
+}
+.containere{
+    width: 1325px; /* Ocupa el 100% del ancho del viewport */
+    height: 100vh; /* Ocupa el 100% de la altura del viewport */
+    background-color: #a07e7e;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.container .banner{
+    width: 100%;
+    background-color: #143DDA;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+
+}
+.containere .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 23, 23, 0.7); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+  }
+  
+  /* Contenido del modal */
+  .modal-overlay .modal-content {
+    background: #ffffff; /* Color de fondo diferente */
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Botón de cerrar */
+  .modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color:#013183;
+    cursor: pointer;
+  }
+  .card-title{
+    padding-bottom: 10px;
+  }
+ /* Ajustes generales para la tabla de posiciones */
+.tabla {
+    max-width: 900px; /* Ancho máximo del contenedor para limitar el tamaño de la tabla */
+    margin: auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+  }
+  
+  .table-responsive {
+    overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es demasiado ancha */
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    width: 50%; /* Ocupa todo el ancho del contenedor */
+    font-size: 14px; /* Tamaño de fuente para los elementos de la tabla */
+    background-color: #000000; /* Color de fondo */
+    border-collapse: collapse;
+    border-radius: 30px; /* Borde redondeado */
+     overflow: hidden;  /* Colapsa los bordes de la tabla */
+  }
+  
+  .table thead th {
+    background-color: #3340f7; /* Color de fondo para las celdas de encabezado */
+    color: #ffffff; /* Color de texto para las celdas de encabezado */
+    text-align: center; /* Alineación centrada del texto en las celdas de encabezado */
+    padding: 10px; /* Espacio interno de las celdas de encabezado */
+    border-bottom: 1px solid #ff0000; /* Borde inferior de las celdas de encabezado */
+  }
+  
+  .table tbody td {
+    text-align: center; 
+     /* Espacio interno de las celdas del cuerpo */ /* Borde inferior de las celdas del cuerpo */
+  }
+  .match-card {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas puedan alinearse una al lado de otra si hay espacio */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espacio entre tarjetas */
+  }
+  
+  .card {
+    width: 300px; /* Hacer la tarjeta más alargada */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px; /* Reducir el padding */
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-logo {
+    width: 50px; /* Ajustar el tamaño del logo */
+    height: 50px; /* Ajustar el tamaño del logo */
+    object-fit: contain;
+    margin-bottom: 5px; /* Reducir el espacio inferior */
+  }
+  
+  .team-name {
+    font-weight: bold;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+  }
+  
+  .vs {
+    font-size: 18px; /* Reducir el tamaño de la fuente */
+    font-weight: bold;
+    margin: 10px 0; /* Espacio vertical alrededor del "vs" */
+  }
+  
+  .result {
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+    font-weight: bold;
+    margin-top: 5px; /* Reducir el espacio superior */
+  }
+  
+  .title {
+    font-size: 48px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado */
+    margin: 20px 0; /* Margen superior e inferior */
+  }
+  
+  
+  
